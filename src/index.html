@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invito</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1 id="header-text">Create An Event Invite</h1>
+
+    <section>
+        <form id="event-form">
+            <div class="form-group">
+                <label for="event-name">Event Name</label>
+                <input type="text" id="event-name" class="form-input" placeholder="Kerala Javascript meet">
+            </div>
+            <div class="form-group">
+                <label for="event-date">Date</label>
+                <input type="date" id="event-date" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="start-time">Start Time</label>
+                <input type="time" id="start-time" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="end-time">End Time</label>
+                <input type="time" id="end-time" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="event-description">Description</label>
+                <textarea 
+                    id="event-description" class="form-input" rows="4" placeholder="Brief description of the event"
+                ></textarea>
+            </div>
+            <div class="form-group">
+                <label for="event-location">Location</label>
+                <input 
+                    type="text" id="event-location"
+                    class="form-input" placeholder="Location of the event"
+                >
+            </div>
+            <button type="submit" class="submit-button">Create Invitation</button>
+        </form>
+    </section>
     <script src="script.js"></script>
 </body>
+
 </html>
