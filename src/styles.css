@@ -9,11 +9,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-/* body.modal-open #content-wrapper {
-    filter: blur(5px);
-    transition: filter 0.3s ease-in-out;
-} */
-
 
 #form-container {
     background-color: #fff;           
@@ -117,4 +112,75 @@ label {
     background-color: white;
     padding: 20px;
     z-index: 1000;
+}
+
+
+
+#invitation-display {
+    margin-top: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 100vh;
+    /* background-color: #f8f9fa; */
+    padding: 20px;
+}
+.invitation-card {
+    background: white;
+    border-radius: 20px;
+    border: 2px solid #ff6b6b;
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.invitation-content {
+    text-align: left;
+}
+.invite-heading {
+    text-align: center; 
+    color: #ff6b6b;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.invite-subheading {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.event-name {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.event-datetime {
+    margin-bottom: 20px;
+    
+}
+.event-date {
+    color: #f02626;
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+.event-time{
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+.event-location {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+.event-description {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
 }
