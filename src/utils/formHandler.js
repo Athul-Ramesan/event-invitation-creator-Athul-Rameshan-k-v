@@ -9,6 +9,7 @@ function handleSubmit(e) {
     const isValidatedFormData = validateForm(formData)
     if(!isValidatedFormData){
         showErroModal()
+        document.body.classList.add("modal-open");
         return
     }
     displayInvitaion(formData)
@@ -17,10 +18,12 @@ function handleSubmit(e) {
 
 function showErroModal(){
     modal.classList.remove("hidden-modal")
+    document.body.classList.add("modal-open");
 }
 
 function hideErrorModal(){
     console.log("clicking hide modal")
     modal.classList.add('hidden-modal');
+    document.body.classList.remove("modal-open");
 }
 closeModalBtn.addEventListener('click', hideErrorModal);

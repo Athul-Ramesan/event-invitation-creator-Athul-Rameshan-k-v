@@ -1,6 +1,7 @@
 
 function displayInvitaion(formData) {
     document.getElementById('form-container').style.display = "none"
+       document.body.style.background = "white";
 
     const eventName = formData.get('eventName')
     const eventDate = formData.get('eventDate')
