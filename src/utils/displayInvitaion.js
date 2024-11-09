@@ -7,7 +7,6 @@ function displayInvitaion(formData) {
     const eventDate = formData.get('eventDate')
     const startTime = formData.get('startTime')
     const endTime = formData.get('endTime')
-    console.log("🚀 ~ displayInvitaion ~ endTime:", endTime)
     const eventDescription = formData.get('eventDescription')
     const eventLocation = formData.get('eventLocation')
 
