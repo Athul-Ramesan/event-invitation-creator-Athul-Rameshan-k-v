@@ -9,6 +9,15 @@ body {
     justify-content: center;
     align-items: center;
 }
+#form-container {
+    background-color: #fff;           
+    border-radius: 8px;        
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;  
+    width: 600px;                    
+    max-width: 600px;                  
+    margin: 20px auto;            
+}
 
 #header-text {
     color: blue;
