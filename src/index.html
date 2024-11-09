@@ -9,65 +9,69 @@
 </head>
 
 <body>
-    <section id="form-container">
-        <header>
-            <h1 id="header-text">Create An Event Invite</h1>
-        </header>
-        <form id="event-form">
-            <div class="form-group">
-                <label for="event-name">Event Name</label>
-                <input type="text" id="event-name" class="form-input" placeholder="Kerala Javascript meet" name="eventName">
-            </div>
-            <div class="form-group">
-                <label for="event-date">Date</label>
-                <input type="date" id="event-date" class="form-input" name="eventDate">
-            </div>
-            <div class="form-group">
-                <label for="start-time">Start Time</label>
-                <input type="time" id="start-time" class="form-input" name="startTime">
-            </div>
-            <div class="form-group">
-                <label for="end-time">End Time</label>
-                <input type="time" id="end-time" class="form-input" name="endTime">
-            </div>
-            <div class="form-group">
-                <label for="event-description">Description</label>
-                <textarea id="event-description" class="form-input" rows="4"
-                    placeholder="Brief description of the event" name="eventDescription"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="event-location">Location</label>
-                <input type="text" id="event-location" class="form-input" placeholder="Location of the event" name="eventLocation">
-            </div>
-            <button type="submit" class="submit-button">Create Invitation</button>
-        </form>
-    </section>
-    <div id="validation-modal" class="modal hidden-modal"  >
-        <div class="modal-content">
-            <p>Please fill in all fields</p>
-            <button id="close-modal" class="modal-close">×</button>
-        </div>
-    </div>
-
-    <section id="invitation-display" class="hidden-modal">
-        <div class="invitation-card">
-            <div class="invitation-content">
-                <h2 class="invite-heading">YOU ARE INVITED</h2>
-                <p class="invite-subheading">TO JOIN THE</p>
-                
-                <h3 class="event-name"></h3>
-                
-                <div class="event-datetime">
-                    <p class="event-date"></p>
-                    <p class="event-time"></p>
+    <div id="content-wrapper">
+        <section id="form-container">
+            <header>
+                <h1 id="header-text">Create An Event Invite</h1>
+            </header>
+            <form id="event-form">
+                <div class="form-group">
+                    <label for="event-name">Event Name</label>
+                    <input type="text" id="event-name" class="form-input" placeholder="Kerala Javascript meet"
+                        name="eventName">
                 </div>
-                
-                <p class="event-location"></p>
-                
-                <p class="event-description"></p>
+                <div class="form-group">
+                    <label for="event-date">Date</label>
+                    <input type="date" id="event-date" class="form-input" name="eventDate">
+                </div>
+                <div class="form-group">
+                    <label for="start-time">Start Time</label>
+                    <input type="time" id="start-time" class="form-input" name="startTime">
+                </div>
+                <div class="form-group">
+                    <label for="end-time">End Time</label>
+                    <input type="time" id="end-time" class="form-input" name="endTime">
+                </div>
+                <div class="form-group">
+                    <label for="event-description">Description</label>
+                    <textarea id="event-description" class="form-input" rows="4"
+                        placeholder="Brief description of the event" name="eventDescription"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="event-location">Location</label>
+                    <input type="text" id="event-location" class="form-input" placeholder="Location of the event"
+                        name="eventLocation">
+                </div>
+                <button type="submit" class="submit-button">Create Invitation</button>
+            </form>
+        </section>
+        <div id="validation-modal" class="modal hidden-modal">
+            <button id="close-modal" class="modal-close">×</button>
+            <div class="modal-content">
+                <p>Please fill in all fields</p>
             </div>
         </div>
-    </section>
+
+        <section id="invitation-display" class="hidden-modal">
+            <div class="invitation-card">
+                <div class="invitation-content">
+                    <h2 class="invite-heading">YOU ARE INVITED</h2>
+                    <p class="invite-subheading">TO JOIN THE</p>
+
+                    <h3 class="event-name"></h3>
+
+                    <div class="event-datetime">
+                        <p class="event-date"></p>
+                        <p class="event-time"></p>
+                    </div>
+
+                    <p class="event-location"></p>
+
+                    <p class="event-description"></p>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <script src="script.js"></script>
     <script src="./utils/validation.js"></script>
