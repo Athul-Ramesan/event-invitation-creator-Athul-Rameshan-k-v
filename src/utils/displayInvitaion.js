@@ -6,14 +6,17 @@ function displayInvitaion(formData) {
     const eventDate = formData.get('eventDate')
     const startTime = formData.get('startTime')
     const endTime = formData.get('endTime')
+    console.log("🚀 ~ displayInvitaion ~ endTime:", endTime)
     const eventDescription = formData.get('eventDescription')
     const eventLocation = formData.get('eventLocation')
 
     const formattedDate = formatDateWithYearMonthDay(eventDate)
+    const formattedStartTime = formatTimeToAMorPM(startTime)
+    const formattedEndTime = formatTimeToAMorPM(endTime)
 
     document.querySelector('.event-name').textContent = eventName;
     document.querySelector('.event-date').textContent = formattedDate;
-    document.querySelector('.event-time').textContent = `${startTime} - ${endTime}`;
+    document.querySelector('.event-time').textContent = `${formattedStartTime} - ${formattedEndTime}`;
     document.querySelector('.event-description').textContent = eventDescription;
     document.querySelector('.event-location').textContent = eventLocation;
 
@@ -31,4 +34,12 @@ function formatDateWithYearMonthDay(date) {
     }).format(newDate);
 
     return formattedDate
+}
+function formatTimeToAMorPM(time){
+    let [hours,minutes] = time.split(":")
+    const timePeriod = Number(hours) >= 12 ? "PM" : "AM"
+    hours = hours % 12 || 12; 
+    const formattedTime = `${hours}:${minutes.toString().padStart(2, '0')} ${timePeriod}`;
+
+    return formattedTime
 }
