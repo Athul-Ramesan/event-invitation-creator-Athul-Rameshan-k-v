@@ -4,7 +4,6 @@ const closeModalBtn = document.getElementById('close-modal');
 
 function handleSubmit(e) {
     e.preventDefault();
-    console.log(e.target, "target value of form")
     const formData = new FormData(eventForm);
     const isValidatedFormData = validateForm(formData)
     if(!isValidatedFormData){
@@ -22,7 +21,6 @@ function showErroModal(){
 }
 
 function hideErrorModal(){
-    console.log("clicking hide modal")
     modal.classList.add('hidden-modal');
     document.body.classList.remove("modal-open");
 }
