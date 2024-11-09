@@ -17,6 +17,3 @@ function validateForm(formData){
     }
     return true
 }
-function validateDate(formData){
-    
-}
