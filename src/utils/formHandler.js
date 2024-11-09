@@ -11,6 +11,7 @@ function handleSubmit(e) {
         showErroModal()
         return
     }
+    displayInvitaion(formData)
 
 }
 
